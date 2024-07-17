@@ -24,7 +24,6 @@ public class ShapeTest {
 		
 		printShapeInfo(shape, "기본정보");
 
-
 		// setResize()를 가져와서, 사이즈 변경
 		for (Shape s : shape) {
 			Resize size = (Resize) s;
@@ -32,8 +31,6 @@ public class ShapeTest {
 		}
 		
 		printShapeInfo(shape, "변경 후 정보");
-
-		
 		
 	}
 		

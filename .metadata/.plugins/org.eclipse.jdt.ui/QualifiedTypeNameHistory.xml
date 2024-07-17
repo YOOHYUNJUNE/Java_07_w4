@@ -31,8 +31,18 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.oop.interface01.ServiceImpl"/>
     <fullyQualifiedTypeName name="com.oop.interface02.Vehicle"/>
+    <fullyQualifiedTypeName name="com.oop.interface03.SmartPhone"/>
     <fullyQualifiedTypeName name="com.oop.interface03.PhoneService"/>
     <fullyQualifiedTypeName name="com.oop.interface03.SmartService"/>
-    <fullyQualifiedTypeName name="com.oop.interface03.SmartPhone"/>
+    <fullyQualifiedTypeName name="com.oop.interface05.SmartPhone"/>
+    <fullyQualifiedTypeName name="com.oop.interface05.SmartService"/>
+    <fullyQualifiedTypeName name="com.oop.interface06.KumhoTire"/>
+    <fullyQualifiedTypeName name="com.oop.interface06.HankookTire"/>
+    <fullyQualifiedTypeName name="com.oop.interface07.Vehicle"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.oop.practice02.Resize"/>
+    <fullyQualifiedTypeName name="com.oop.practice02.Triangle"/>
+    <fullyQualifiedTypeName name="com.oop.practice02.Rectangle"/>
+    <fullyQualifiedTypeName name="com.nested.class01.A"/>
+    <fullyQualifiedTypeName name="com.oop.practice03.Company"/>
 </qualifiedTypeNameHistroy>
