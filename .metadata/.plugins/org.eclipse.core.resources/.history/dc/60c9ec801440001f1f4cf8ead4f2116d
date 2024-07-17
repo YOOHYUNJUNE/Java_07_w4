@@ -1,0 +1,29 @@
+package com.oop.basic.ch09;
+
+public class Account {
+
+	String account;
+	int balance;
+	double interestRate;
+	
+	Account() {}
+
+	public Account(String account, int balance, double interestRate) {
+		this.account = account;
+		this.balance = balance;
+		this.interestRate = interestRate;
+	}
+	
+	
+	double calculateInterest() {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

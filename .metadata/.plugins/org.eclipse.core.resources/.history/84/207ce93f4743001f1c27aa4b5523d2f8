@@ -1,0 +1,20 @@
+package com.oop.interface1;
+
+public class RemoteControlExample {
+	public static void main(String[] args) {
+		
+//		TV tv = new TV();
+//		Radio radio = new Radio();
+//		tv.turnOn();
+//		radio.turnOn();
+		
+		// 인터페이스를 이용
+		RemoteControl rc = new Radio();
+		rc.turnOn();
+		rc = new TV();
+		rc.turnOn();
+		
+		
+		
+	}
+}

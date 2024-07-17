@@ -1,0 +1,14 @@
+package com.statement.loop;
+
+public class BreakExample2 {
+	public static void main(String[] args) {
+		for (char upper='A'; upper <= 'Z'; upper++) {
+			for (char lower=0; lower <= 10; lower++) {
+				System.out.println(upper + " - " + lower);
+				if (lower == 5) {
+					break;
+				}
+			}
+		}
+	}
+}

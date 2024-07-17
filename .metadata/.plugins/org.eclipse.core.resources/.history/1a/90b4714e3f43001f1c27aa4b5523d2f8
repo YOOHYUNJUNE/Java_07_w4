@@ -1,0 +1,21 @@
+package com.practice.mobile;
+
+public class MobileExample {
+	public static void main(String[] args) {
+		
+		Mobile l = new Ltab();
+		Mobile O = new Otab();
+		
+		l.operate(10);
+		l.charge(20);
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+}

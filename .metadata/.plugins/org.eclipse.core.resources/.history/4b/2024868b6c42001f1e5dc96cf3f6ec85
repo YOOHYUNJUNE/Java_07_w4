@@ -1,0 +1,23 @@
+package com.oop.practice3;
+
+public class Account {
+	
+	int balance;
+	final int MIN_BALANCE = 0;
+	final int MAX_BALANCE = 1_000_000;
+	
+	Account(int balance) {
+		this.balance = balance;
+	}
+	
+	
+	public int setBalance(int balance) {
+		this.balance = balance >= MIN_BALANCE && balance <= MAX_BALANCE ? balance : 0;
+	}
+	
+	public int getBalance() {
+		return balance;
+	}
+	
+	
+}

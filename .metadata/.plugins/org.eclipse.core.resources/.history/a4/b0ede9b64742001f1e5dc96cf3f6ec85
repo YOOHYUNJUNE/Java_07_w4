@@ -1,0 +1,20 @@
+package com.oop.static_member;
+
+public class ClassName {
+
+	int instanceField = 7;
+	void instanceMethod() {
+		// 인스턴스 메소드는 객체가 생성된 후 호출
+		
+		
+	}
+	
+	
+	
+	
+	static int staticFiled = 15;
+	static void staticMethod1() {}
+	static void staticMethod2() {}
+	
+	
+}

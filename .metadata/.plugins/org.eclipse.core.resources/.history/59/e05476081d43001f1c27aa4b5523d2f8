@@ -1,0 +1,12 @@
+package com.practice.vehicle;
+
+public class Car extends Vehicle {
+	
+	
+	
+	
+	
+	
+	
+	
+}

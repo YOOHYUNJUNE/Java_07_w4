@@ -1,0 +1,20 @@
+package com.practice.vehicle;
+
+public class Car extends Vehicle {
+
+	int oil;
+	
+	public Car(int maxWeight, double oilTankSize, double efficiency, int oil) {
+		super(maxWeight, oilTankSize, efficiency);
+		this.oil = oil;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

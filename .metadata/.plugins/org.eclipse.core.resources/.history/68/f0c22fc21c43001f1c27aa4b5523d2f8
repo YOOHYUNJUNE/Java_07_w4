@@ -1,0 +1,11 @@
+package com.practice.vehicle;
+
+public class Vehicle {
+
+	int maxWeight;
+	double oilTankSize;
+	
+	
+	
+	
+}

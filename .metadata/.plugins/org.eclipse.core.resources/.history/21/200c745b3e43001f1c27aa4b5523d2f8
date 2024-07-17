@@ -1,0 +1,23 @@
+package com.practice.mobile;
+
+public class Ltab extends Mobile {
+	
+	public Ltab() {}
+	
+	public Ltab(String mobileName, String osType, int batterySize) {
+		super(mobileName, osType, batterySize);
+	}
+	
+	
+
+	@Override
+	int operate(int time) {
+		return getBatterySize() - time;
+	}
+
+	@Override
+	int charge(int time) {
+		return getBatterySize() + time;
+	}
+
+}

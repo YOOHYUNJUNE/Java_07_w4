@@ -1,0 +1,37 @@
+package com.oop.practice5.library.book;
+
+public class EBook extends Book{
+
+	String title;
+	String name;
+	String ISBN;
+	double fileSize;
+	
+	int BookCount = 0;
+	
+	public EBook() {}
+	
+	public EBook(String title, String name, String isbn, double size) {
+		super();
+		this.title = title;
+		this.name = name;
+		ISBN = isbn;
+		fileSize = size;
+		BookCount++;
+	}
+	
+	@Override
+	public void printBookInfo() {
+		System.out.println("이름 : " + title + " 저자 : " + name + " 국제표준코드 : " + ISBN + " 용량 : " + fileSize);
+	}
+	
+	public static int getBookCount() {
+		return bookCount++;
+	}
+	
+	
+	
+	
+	
+	
+}

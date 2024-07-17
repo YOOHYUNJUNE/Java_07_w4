@@ -1,0 +1,12 @@
+package com.oop.practice2;
+
+public class Printer {
+
+	public void println(String value) {
+		return ("나와라" + String.valueOf(value));
+	}
+	
+	
+	
+	
+}

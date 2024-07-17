@@ -1,0 +1,24 @@
+package com.practice.mobile;
+
+public abstract class Mobile {
+
+	String mobileName, osType;
+	int batterySize;
+	
+	Mobile() {}
+
+	public Mobile(String mobileName, String osType, int batterySize) {
+		this.mobileName = mobileName;
+		this.osType = osType;
+		this.batterySize = batterySize;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

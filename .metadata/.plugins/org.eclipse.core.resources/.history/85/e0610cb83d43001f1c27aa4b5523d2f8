@@ -1,0 +1,23 @@
+package com.practice.mobile;
+
+public class Ltab extends Mobile {
+	
+	public Ltab(String mobileName, String osType, int batterySize) {
+		super(mobileName, osType, batterySize);
+	}
+	
+	
+
+	@Override
+	int operate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	int charge() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

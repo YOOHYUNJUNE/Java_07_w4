@@ -1,0 +1,22 @@
+package com.oop.basic.practice03;
+
+public class AccountExample {
+	public static void main(String[] args) {
+		
+		// 출금액이 잔액보다 클 경우 오류
+		int money = 600_000;
+		void MoneyError() {
+			if (balance >= money) {
+				System.out.println("출금합니다. 이자 : " + calculateInterest() + "원");
+			} else {
+				System.out.println("잔액이 부족합니다.");
+			}
+		}
+		
+		Account A = new Account("145-1234-5678", 500_000, 5);
+		
+		System.out.println("계좌정보 : " + A.account + "\t\t잔액 : " + A.balance + "\t\t이자 : " + A.calculateInterest());
+		
+		
+	}
+}

@@ -1,0 +1,46 @@
+package com.practice.vehicle;
+
+public class Truck extends Car {
+
+	
+	
+	public Truck(int maxWeight, double oilTankSize, double efficiency) {
+		super(maxWeight, oilTankSize, efficiency);
+	}
+
+	// 적재량 5kg당 연비 0.2km 감소
+	public double getEfficiency() {
+		return efficiency -= weight / 25 ;
+	}
+	
+	// 거리를 연비로 나눠 오일 소모량 추출
+	int distance;
+	public double calcOil(int distance) {
+		return oil = (int) (oil - (efficiency / distance) * 100);
+	}
+	
+	// calcOil호출해, 잔여 오일 -= 오일 감소
+	public void moving(int move) {
+		oil -= move ;
+	}
+	
+	// calcOil호출해, 1L 당 3000원
+	public int getCost() {
+		return oil * 30;
+	}
+
+	@Override
+	public String toString() {
+		super.toString();
+		return "Truck [최대적재중량=" + maxWeight + ", 오일탱크크기=" + oilTankSize + ", 잔여오일=" + oil + ", 적재중량=" + weight +  ", 연비=" + efficiency + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

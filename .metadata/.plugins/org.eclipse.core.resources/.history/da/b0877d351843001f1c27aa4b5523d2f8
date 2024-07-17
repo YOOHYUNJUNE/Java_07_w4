@@ -1,0 +1,16 @@
+package polymorphism02;
+
+public class GameExample {
+	public static void main(String[] args) {
+		
+		Warrier faker = new Warrier();
+		faker.attack();
+		
+		
+		
+		
+		
+		
+		
+	}
+}

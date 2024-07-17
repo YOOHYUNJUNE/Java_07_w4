@@ -1,0 +1,10 @@
+package b;
+
+import a.ClassName;
+
+public class B {
+	ClassName cn = new ClassName();
+	
+	
+	
+}

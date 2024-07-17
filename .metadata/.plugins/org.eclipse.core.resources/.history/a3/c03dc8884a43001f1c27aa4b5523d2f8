@@ -1,0 +1,32 @@
+package com.oop.interface1;
+
+public class RemoteControlExample {
+	public static void main(String[] args) {
+		
+//		TV tv = new TV();
+//		Radio radio = new Radio();
+//		tv.turnOn();
+//		radio.turnOn();
+		
+		// final이 생략되어 있어 수정 불가
+//		RemoteControl.MIN_VOLUME = 10;
+		
+		// 인터페이스를 이용
+		RemoteControl rc = new TV();
+		rc.turnOn();
+		rc.setVolume(11);
+		
+		TV tv = (TV) rc;
+		System.out.println(tv.getVolume());
+		
+		rc.setVolume(-1);
+		System.out.println(tv.getVolume());
+		
+		rc.turnOff();
+
+
+		
+		
+		
+	}
+}

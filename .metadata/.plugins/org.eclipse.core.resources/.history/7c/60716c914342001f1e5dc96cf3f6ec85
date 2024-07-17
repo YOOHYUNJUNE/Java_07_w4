@@ -1,0 +1,14 @@
+package com.oop.basic;
+
+public class Car {
+	
+	String model;
+	int gas, speed;
+	
+	Car(String model) {
+		this.model = model;
+	}
+	
+	
+	
+}

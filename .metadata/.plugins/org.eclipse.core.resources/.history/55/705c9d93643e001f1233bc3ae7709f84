@@ -1,0 +1,8 @@
+package com.statement.loop;
+
+public class ForExample4 {
+	public static void main(String[] args) {
+		
+	}
+	
+}

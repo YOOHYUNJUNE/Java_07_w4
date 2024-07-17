@@ -1,0 +1,17 @@
+package b;
+
+import a.ClassName;
+
+public class B {
+	
+	byte byteValue = 1;
+	short shortValue = 1;
+	int intValue = 1;
+	
+	ClassName cn1 = new ClassName(byteValue);
+	ClassName cn2 = new ClassName(byteValue);
+	ClassName cn3 = new ClassName(byteValue);
+	
+	
+	
+}

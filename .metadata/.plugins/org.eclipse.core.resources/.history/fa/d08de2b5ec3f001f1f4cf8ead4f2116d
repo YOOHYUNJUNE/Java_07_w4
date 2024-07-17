@@ -1,0 +1,50 @@
+package com.coding_test;
+
+import java.util.Scanner;
+
+public class Star {
+    public static void main(String[] args) {
+        // 별 하나씩 찍기
+        // 오른쪽 기준으로 정렬
+        
+        Scanner sc = new Scanner(System.in);
+        // 별 개수를 입력하세요.
+        System.out.println("별 개수를 입력하세요.");
+//        int num = sc.nextInt();
+        int num = 5;
+        
+        for (int i=0; i<num; i++) {
+        	
+        	// num - 1 만큼 공백
+        	// num = 3; 2공, 1공, 0공
+        	// num = 5; 4공, 3공, 2공, 1공, 0공
+        	
+        	// 정렬
+        	for (int j=i; j>=i; j--) {
+        		System.out.print(" ");
+        	}
+        	
+        	// 별 출력
+            for (int k=0; k<i; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+      
+        
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

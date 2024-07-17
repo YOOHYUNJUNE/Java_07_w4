@@ -1,0 +1,27 @@
+package com.practice.mobile;
+
+public class MobileExample {
+	public static void main(String[] args) {
+		
+		Mobile l = new Ltab();
+		Mobile o = new Otab();
+		
+		l.charge(10);
+		System.out.println(l.getBatterySize());
+		l.operate(10);
+		System.out.println(l.getBatterySize());
+		
+		System.out.println();
+		
+		o.charge(10);
+		System.out.println(o.batterySize);
+		o.operate(10);
+		System.out.println(o.batterySize);
+		
+		
+		
+	}
+	
+	
+	
+}

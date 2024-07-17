@@ -1,0 +1,12 @@
+package com.oop.basic.practice03;
+
+public class AccountExample {
+	public static void main(String[] args) {
+		
+		Account A = new Account("145-1234-5678", 500_000, 4.5);
+		
+		System.out.println("게좌정보 : " + A.account + "\t\t잔액 : " + A.balance + "\t\t이자 : " + A.calculateInterest());
+		
+		
+	}
+}

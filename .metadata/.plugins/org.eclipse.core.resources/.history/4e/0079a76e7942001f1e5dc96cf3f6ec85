@@ -1,0 +1,12 @@
+package com.opp.inheritance2;
+
+public class Parents {
+	
+	String eyeColor = "갈색";
+	
+	void walk() {
+		System.out.println("터벅터벅");
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+package com.oop.basic.test;
+
+public class StudentExample {
+	public static void main(String[] args) {
+		
+		Student Kim = new Student();
+		Student Lee = new Student();
+		Student Park = new Student();
+		
+		System.out.println(Kim.name);
+		
+		
+		
+		
+		
+		
+		
+	}
+}

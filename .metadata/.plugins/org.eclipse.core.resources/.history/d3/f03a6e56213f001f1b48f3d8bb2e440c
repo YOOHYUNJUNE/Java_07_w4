@@ -1,0 +1,13 @@
+package com.reference.list;
+
+public class ListPractice {
+	public static void main(String[] args) {
+		String wetherArr[] = {"봄", "여름", "가을", "겨울"};
+		wetherArr[0] = "Spring";
+		wetherArr[1] = "Summer";
+		wetherArr[2] = "Autumn";
+		wetherArr[3] = "Winter";
+
+		System.out.println(wetherArr[0]);
+	}
+}

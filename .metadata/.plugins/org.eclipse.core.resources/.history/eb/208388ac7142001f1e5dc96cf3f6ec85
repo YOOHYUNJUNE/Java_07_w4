@@ -1,0 +1,44 @@
+package com.oop.practice4;
+
+public class Student {
+
+	String name, id;
+	int age;
+	
+	
+	Student() {}
+
+	public Student(String name, String id, int age) {
+		this.name = name;
+		this.id = id;
+		this.age = age;
+	}
+	
+	private void generateId() {
+		// "S" + (1000 + 학생수)
+		
+	}
+	
+	public void setStudentCount() {
+		
+	}
+	
+	public void getStudentCount() {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

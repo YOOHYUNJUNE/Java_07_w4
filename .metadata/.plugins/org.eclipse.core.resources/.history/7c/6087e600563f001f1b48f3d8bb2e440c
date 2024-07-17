@@ -1,0 +1,11 @@
+package com.enumeration;
+
+public enum week {
+	SUNDAY,
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDDAY,
+	FRIDAY,
+	SATURDAY
+}

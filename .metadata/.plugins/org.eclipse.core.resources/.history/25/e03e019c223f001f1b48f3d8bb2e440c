@@ -1,0 +1,11 @@
+package com.reference.list;
+
+public class Listbasic3 {
+	public static void main(String[] args) {
+		String[] season; // 선언만 하면 메모리에 적용되지 않음
+//		season = 			  {"봄", "여름", "가을", "겨울"}; // 오류
+		season = new String[] {"봄", "여름", "가을", "겨울"};
+		
+		
+	}
+}

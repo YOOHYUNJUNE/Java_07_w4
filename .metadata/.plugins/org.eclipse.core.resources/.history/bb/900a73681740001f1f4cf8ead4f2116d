@@ -1,0 +1,47 @@
+package com.oop.basic.practice03;
+
+public class Account {
+
+	String account;
+	int balance;
+	double interestRate;
+	
+	Account() {}
+
+	public Account(String account, int balance, double interestRate) {
+		this.account = account; // 계좌번호
+		this.balance = balance; // 잔액
+		this.interestRate = interestRate; // 이율
+	}
+	
+	// 지급할 이자
+	double calculateInterest() {
+		double result = balance * interestRate/100;
+		return result;
+	} 
+	
+	
+	// 출금액이 잔액보다 클 경우 오류
+	int money = 600_000;
+	
+	void MoneyError() {
+		if (balance >= money) {
+			System.out.println("출금합니다. 이자 : " + calculateInterest() + "원");
+		} else {
+			System.out.println("잔액이 부족합니다.");
+		}
+	}
+	
+	// 입금
+	int plusMoney = 0;
+	
+	void MoneyPlus() {
+		
+	}
+	
+	
+	
+	
+	
+	
+}

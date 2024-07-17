@@ -1,0 +1,17 @@
+package com.oop.practice2;
+
+public class PrinterExample {
+	public static void main(String[] args) {
+		
+		Printer p = new Printer();
+		// 앞에 "나와라"가 출력되게.
+		p.println(10);
+		p.println(true);
+		p.println(5.7);
+		p.println("홍길동");
+		
+	
+	
+	
+	}
+}

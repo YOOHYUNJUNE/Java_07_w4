@@ -1,0 +1,11 @@
+package com.statement.practice;
+
+public class Practice5 {
+	public static void main(String[] args) {
+		// 1~100 합
+		// Scanner에서 1자리 정수형을 받아, 입력 받은 수의 배수만 더해야 함
+		// 5 -> 5+1+15+20...+100
+		
+		
+	}
+}

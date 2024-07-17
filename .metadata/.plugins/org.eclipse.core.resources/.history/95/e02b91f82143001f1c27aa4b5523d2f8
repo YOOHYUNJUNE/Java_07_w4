@@ -1,0 +1,63 @@
+package com.practice.vehicle;
+
+public class Car extends Vehicle {
+
+	int oil; // 잔여 오일
+	int distance; // 거리
+	
+	public Car(int maxWeight, double oilTankSize, double efficiency) {
+		super(maxWeight, oilTankSize, efficiency);
+		
+	}
+	
+	// 연료 주입
+	double overOil;
+	public void addOil() {
+		if (overOil > oilTankSize) {
+			System.out.println("용량 초과");
+		} else {
+			oilTankSize += overOil;
+		}
+	}
+	
+	// 주행에 따른 오일 감소
+	public void moving() {
+		oilTankSize -= distance;
+	}
+	
+	// 적재 중량
+	int weight;
+	public void addWeight() {
+		if (weight > maxWeight) {
+			System.out.println("중량 초과");
+		} else {
+			maxWeight += weight;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "잔여오일=" + oil + ", 적재중량=" + weight + "]";
+	}
+
+	public int getOil() {
+		return oil;
+	}
+
+	public void setOil(int oil) {
+		this.oil = oil;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

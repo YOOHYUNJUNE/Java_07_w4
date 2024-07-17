@@ -1,0 +1,8 @@
+package c;
+
+import b.B;
+
+public class C {
+	// b는 public이므로, 패키지가 달라도 import로 호출 가능
+	B b = new B();
+}

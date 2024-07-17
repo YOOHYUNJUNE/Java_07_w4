@@ -1,0 +1,9 @@
+package com.reference.list;
+
+public class Listbasic {
+	public static void main(String[] args) {
+		int[] score = { 100, 75, 40, 43, 96 };
+		
+		
+	}
+}

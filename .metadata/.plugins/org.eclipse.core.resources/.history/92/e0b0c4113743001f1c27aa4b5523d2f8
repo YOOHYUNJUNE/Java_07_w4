@@ -1,0 +1,15 @@
+package com.oop.abstract1;
+
+public class AnimalExample {
+	public static void main(String[] args) {
+		
+//		// 추상 클래스는 인스턴스로 만들지 못함
+//		Animal animal = new Animal();
+		
+		Pig p = new Pig();
+		Monkey m = new Monkey();
+		Panda pd = new Panda();
+		Rabbit r = new Rabbit();
+		
+	}
+}

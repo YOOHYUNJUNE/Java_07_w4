@@ -1,0 +1,6 @@
+package a;
+
+// public 제거함
+class A {
+
+}

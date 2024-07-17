@@ -1,0 +1,5 @@
+package com.oop.abstract3;
+
+public class Otab extends Mobile {
+
+}

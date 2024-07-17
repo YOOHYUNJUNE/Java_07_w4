@@ -1,0 +1,7 @@
+package com.reference.list;
+
+public class ListPractice {
+	public static void main(String[] args) {
+		
+	}
+}

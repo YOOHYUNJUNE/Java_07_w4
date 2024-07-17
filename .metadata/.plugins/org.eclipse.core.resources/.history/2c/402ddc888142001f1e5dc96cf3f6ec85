@@ -1,0 +1,5 @@
+package com.oop.practice5.library.book;
+
+public class Book {
+
+}

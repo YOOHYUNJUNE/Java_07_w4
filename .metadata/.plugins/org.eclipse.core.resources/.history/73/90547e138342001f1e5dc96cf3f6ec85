@@ -1,0 +1,31 @@
+package com.oop.practice5.library.book;
+
+public class Book {
+	
+	String title;
+	String name;
+	String ISBN;
+	int BookCount = 0;
+	
+	public Book(String title, String name, String isbn) {
+		super();
+		this.title = title;
+		this.name = name;
+		ISBN = isbn;
+		BookCount++;
+	}
+	
+
+	final void printBookInfo(title, name, isbn) {
+		System.out.println("이름 : " + title + " 저자 : " + name + " 국제표준코드 : " + ISBN);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

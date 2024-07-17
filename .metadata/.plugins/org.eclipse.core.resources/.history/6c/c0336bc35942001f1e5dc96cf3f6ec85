@@ -1,0 +1,21 @@
+package oop.access;
+
+public class Car {
+
+	String name;
+	int speed;
+	
+//	Car() {
+//		this.name = null;
+//		this.speed = 0;
+//	}
+	
+	Car(String name) {
+		this.name = name;
+	}
+	
+	
+	 
+	
+	
+}

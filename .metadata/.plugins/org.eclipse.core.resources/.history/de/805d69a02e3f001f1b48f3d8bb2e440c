@@ -1,0 +1,13 @@
+package com.reference.list;
+
+
+public class ListPractice3 {
+	public static void main(String[] args) {
+		// 문자열 배열 합
+		
+		String[] subjects = {"", "", "", "", ""};
+		
+		
+		
+	}
+}

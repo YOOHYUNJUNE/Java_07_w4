@@ -1,0 +1,12 @@
+package com.oop.static_member;
+
+// 정적 필드
+public class StaticExample {
+	String instanceField = "Hello";
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+}

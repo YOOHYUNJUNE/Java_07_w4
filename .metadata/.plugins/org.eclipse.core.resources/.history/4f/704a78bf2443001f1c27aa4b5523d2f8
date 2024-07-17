@@ -1,0 +1,31 @@
+package com.practice.vehicle;
+
+public class VehicleTest {
+	public static void main(String[] args) {
+		
+		Truck car = new Truck(1000, 100, 5);
+		
+		System.out.println("트럭 기본 정보");
+		System.out.println(car.toString());		
+		
+		System.out.println();
+		System.out.println("주유, 적재, 주행 후");
+		
+		// 주유
+		car.addOil(50);
+		
+		// 주행
+		car.calcOil(50)
+		
+		// 적재
+		car.getEfficiency(100);
+		
+		System.out.println(car.toString());
+
+		
+		
+		
+		
+		
+	}
+}

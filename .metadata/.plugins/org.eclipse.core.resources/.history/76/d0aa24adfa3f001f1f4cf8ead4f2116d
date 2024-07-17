@@ -1,0 +1,23 @@
+package com.oop.basic.test;
+
+public class Student01 {
+	// 과목 평균, 학점
+	String name;
+	int korean;
+	int english;
+	int math;
+	int science;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

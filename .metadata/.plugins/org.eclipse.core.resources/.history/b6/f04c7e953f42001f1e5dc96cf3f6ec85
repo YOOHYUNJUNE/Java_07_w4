@@ -1,0 +1,28 @@
+package com.oop.basic;
+
+public class Korean {
+	
+	String name;
+	String gender;
+	int birthYear;
+	int birthMonth;
+	int birtghDay;
+	
+	Korean() {}
+	
+	public Korean(String name, String gender, int birthYear, int birthMonth, int birtghDay) {
+		this.name = name;
+		this.gender = gender;
+		this.birthYear = birthYear;
+		this.birthMonth = birthMonth;
+		this.birtghDay = birtghDay;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

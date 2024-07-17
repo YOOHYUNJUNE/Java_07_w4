@@ -1,0 +1,14 @@
+package com.referencere.basic;
+
+public class ReferenceExample {
+	public static void main(String[] args) {
+		int[] arr1 = {1, 2, 3};
+		
+		for (int i=0; i<4; i++) {
+			int number = arr1[i];
+			System.out.println(number);
+		}
+
+		
+	}
+}

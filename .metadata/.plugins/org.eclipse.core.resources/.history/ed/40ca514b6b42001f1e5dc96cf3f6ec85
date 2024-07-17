@@ -1,0 +1,24 @@
+package com.oop.practice2;
+
+public class Printer {
+	
+	private final String MSG = "출력 : ";
+
+	public void println(String value) {
+		System.out.println(MSG + value + ((Object)value).getClass().getName());
+	}
+	
+	public void println(int value) {
+		System.out.println(MSG + value);
+	}
+	
+	public void println(double value) {
+		System.out.println(MSG + value);
+	}
+	
+	public void println(boolean value) {
+		System.out.println(MSG + value);
+	}
+	
+	
+}

@@ -1,0 +1,17 @@
+package com.oop.practice5.library.main;
+
+public class BookExample {
+	public static void main(String[] args) {
+		// Book
+		// 제목, 저자, ISBN (string)
+		// 정적 멤버 변수로 총 도서수 관리
+		
+		// EBook
+		// 파일 크기 포함 (double)
+		// Book 상속, 오버라이딩
+		
+		
+		
+		
+	}
+}

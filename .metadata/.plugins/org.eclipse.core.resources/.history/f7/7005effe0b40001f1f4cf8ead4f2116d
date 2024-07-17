@@ -1,0 +1,22 @@
+package com.coding_test;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Pal {
+	public static void main(String[] args) {
+		
+		// 소문자 단어가 팰린드롬인가 : 앞 뒤로 읽을 때 같은 단어 ( level , noon )
+		// 팰린드롬 조건: 입력시, 1번째와 -1번째, 2번째와 -2번째.... charAt()
+		// Pal ? 1 : 0
+		System.out.println("단어를 입력하세요.");
+		
+		Scanner sc = new Scanner(System.in);
+		String pal = sc.nextLine();
+		System.out.println(pal.charAt(pal.length()-1));
+		System.out.println(pal.charAt(0));
+		
+		
+		
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.enumeration.week"/>
+    <fullyQualifiedTypeName name="com.enumeration.Week"/>
+    <fullyQualifiedTypeName name="com.hankook.Tire"/>
+    <fullyQualifiedTypeName name="com.kumho.Tire"/>
+    <fullyQualifiedTypeName name="a.ClassName"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.opp.inheritance3.Calculator"/>
+    <fullyQualifiedTypeName name="com.oop.practice5.library.book.Book"/>
+    <fullyQualifiedTypeName name="com.oop.practice5.library.book.EBook"/>
+    <fullyQualifiedTypeName name="com.oop.inheritance.Airplane"/>
+    <fullyQualifiedTypeName name="com.oop.inheritance.SupersonicAirplane"/>
+    <fullyQualifiedTypeName name="com.oop.inheritance02.Parents"/>
+    <fullyQualifiedTypeName name="polymorphism.KumhoTire"/>
+    <fullyQualifiedTypeName name="polymorphism02.Weapon"/>
+    <fullyQualifiedTypeName name="polymorphism02.Warrier"/>
+    <fullyQualifiedTypeName name="polymorphism.HankookTire"/>
+    <fullyQualifiedTypeName name="com.practice.vehicle.Vehicle"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
+    <fullyQualifiedTypeName name="com.practice.vehicle.Car"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.awt.Rectangle"/>
+    <fullyQualifiedTypeName name="com.oop.abstract2.Shape"/>
+    <fullyQualifiedTypeName name="java.rmi.server.RemoteObjectInvocationHandler"/>
+    <fullyQualifiedTypeName name="java.rmi.Remote"/>
+    <fullyQualifiedTypeName name="com.oop.interface1.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,19 @@
+package com.oop.basic.test;
+
+public class StudentExample {
+	public static void main(String[] args) {
+		
+		Student a = new Student("김", 90, 91, 92, 93);
+		Student b = new Student("이", 80, 81, 82, 83);
+		Student c = new Student("박", 70, 71, 72, 73);
+		
+		
+		System.out.println(a.name + " " + a.getAvg() + " ");
+		
+		
+		
+		
+		
+		
+	}
+}

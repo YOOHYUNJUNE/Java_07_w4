@@ -1,0 +1,30 @@
+package com.oop.basic.practice03;
+
+public class Account {
+
+	String account;
+	int balance;
+	double interestRate;
+	
+	Account() {}
+
+	public Account(String account, int balance, double interestRate) {
+		this.account = account; // 계좌번호
+		this.balance = balance; // 잔액
+		this.interestRate = interestRate; // 이율
+	}
+	
+	// 지급할 이자
+	double calculateInterest() {
+		double result = balance * interestRate;
+		return result;
+	} 
+	
+	
+	
+	
+	
+	
+	
+	
+}

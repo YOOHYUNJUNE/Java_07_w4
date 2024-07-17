@@ -1,0 +1,8 @@
+package com.oop.singleton;
+
+public class Singleton {
+
+	// 싱글톤
+	private static Singleton st = new Singleton();
+	
+}

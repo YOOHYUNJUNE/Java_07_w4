@@ -1,0 +1,22 @@
+package com.oop.practice2;
+
+public class Printer {
+
+	public void println(String value) {
+		System.out.println("나와라 " + value + ((Object)value).getClass().getName());
+	}
+	
+	public void println(int value) {
+		System.out.println("나와라 " + value + ((Object)value).getClass().getName());
+	}
+	
+	public void println(double value) {
+		System.out.println("나와라 " + value);
+	}
+	
+	public void println(boolean value) {
+		System.out.println("나와라 " + value);
+	}
+	
+	
+}

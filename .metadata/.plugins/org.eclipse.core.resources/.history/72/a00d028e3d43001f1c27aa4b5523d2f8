@@ -1,0 +1,17 @@
+package com.practice.mobile;
+
+public class Ltab extends Mobile {
+
+	@Override
+	int operate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	int charge() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

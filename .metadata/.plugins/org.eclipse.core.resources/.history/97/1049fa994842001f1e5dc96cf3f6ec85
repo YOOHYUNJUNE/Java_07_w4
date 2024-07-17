@@ -1,0 +1,31 @@
+package com.oop.static_member;
+
+public class ClassName {
+
+	String instanceField = "인스턴스";
+	void instanceMethod() {
+		// 인스턴스 메소드는 객체가 생성된 후 호출
+		// 따라서 인스턴스 필드 사용 가능
+		System.out.println(instanceField);
+		// 이후 정의할 정적 필드도 사용 가능
+		System.out.println(staticField);
+		
+		instanceField = "instance";
+		// 정적 필드 값을 변경하는 것이 일반적이지는 않음
+		// 모든 값이 바뀜
+//		staticField = "static"; 
+		System.out.println(instanceField);
+//		System.out.println(staticField);
+		
+	}
+	
+	
+	static String staticField = "정적";
+	static void staticMethod1() {
+		
+		
+	}
+	static void staticMethod2() {}
+	
+	
+}

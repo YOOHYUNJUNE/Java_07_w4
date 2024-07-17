@@ -1,0 +1,7 @@
+package com.statement.loop;
+
+public class Continue {
+	public static void main(String[] args) {
+		for(int i=1; )
+	}
+}

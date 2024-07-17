@@ -1,0 +1,35 @@
+package com.reference.string;
+
+import java.util.Scanner;
+
+public class StringPractice2 {
+	public static void main(String[] args) {
+		// Scanner로 주민번호를 입력받음 990101-1010100
+		// 자리수가 맞지 않으면, 계속 입력 받음
+		// 자리수가 맞으면, 태어난 월이 3~5면 "봄", 6~8이면 "여름"... 성별도 출력
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("주민번호를 입력하세요.");
+		String num = sc.nextLine();
+		
+		int month = num.substring(2,3);
+		System.out.println(month);
+		
+		if(num.length() == 14) {
+			if(num.substring(2,3) >= 3 || num.substring(2,3) <= 5) {
+				System.out.println("[봄]에 태어남");
+			} 
+			
+			
+		} else {
+			System.out.println("바르게 입력하세요.");
+			num = sc.nextLine();
+		}
+		System.out.println(num);
+		
+		
+		
+	}
+		
+}
+

@@ -1,0 +1,17 @@
+package com.oop.inheritance03;
+
+public class AnimalExample {
+	public static void main(String[] args) {
+		
+		Animal animal = new Animal();
+		animal.makeSound();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

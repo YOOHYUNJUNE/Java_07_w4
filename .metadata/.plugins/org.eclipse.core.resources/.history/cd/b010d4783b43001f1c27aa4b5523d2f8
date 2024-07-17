@@ -1,0 +1,16 @@
+package com.oop.abstract2;
+
+public class Rectangle extends Shape {
+
+	private double width, height;
+
+	public Rectangle(double width, double height) {
+		super();
+		this.width = width;
+		this.height = height;
+	}
+	
+	
+	
+	
+}

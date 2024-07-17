@@ -1,0 +1,10 @@
+package polymorphism02;
+
+public class Weapon {
+
+	public void use() {
+		System.out.println("맨손으로 쾅쾅");
+	}
+	
+	
+}
