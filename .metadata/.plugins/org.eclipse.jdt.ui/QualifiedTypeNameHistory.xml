@@ -23,11 +23,16 @@
     <fullyQualifiedTypeName name="com.practice.vehicle.Vehicle"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
     <fullyQualifiedTypeName name="com.practice.vehicle.Car"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.awt.Rectangle"/>
     <fullyQualifiedTypeName name="com.oop.abstract2.Shape"/>
     <fullyQualifiedTypeName name="java.rmi.server.RemoteObjectInvocationHandler"/>
     <fullyQualifiedTypeName name="java.rmi.Remote"/>
     <fullyQualifiedTypeName name="com.oop.interface1.RemoteControl"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.oop.interface01.ServiceImpl"/>
+    <fullyQualifiedTypeName name="com.oop.interface02.Vehicle"/>
+    <fullyQualifiedTypeName name="com.oop.interface03.PhoneService"/>
+    <fullyQualifiedTypeName name="com.oop.interface03.SmartService"/>
+    <fullyQualifiedTypeName name="com.oop.interface03.SmartPhone"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

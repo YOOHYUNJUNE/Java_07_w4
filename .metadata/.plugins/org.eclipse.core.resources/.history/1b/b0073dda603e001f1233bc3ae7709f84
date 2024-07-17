@@ -1,9 +1,0 @@
-package com.statement.loop;
-
-public class ForExample {
-	public static void main(String[] args) {
-		System.out.println("안녕하세요."); // Ctrl + Alt + 방향키 : 복붙
-		
-		
-	}
-}

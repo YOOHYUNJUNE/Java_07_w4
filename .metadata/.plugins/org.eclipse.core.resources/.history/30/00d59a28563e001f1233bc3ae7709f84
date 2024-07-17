@@ -1,7 +1,0 @@
-package com.statement.condition;
-
-public class IfExample4 {
-	public static void main(String[] args) {
-		
-	}
-}
