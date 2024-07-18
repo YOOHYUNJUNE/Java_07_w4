@@ -6,6 +6,9 @@ public class CompanyExample {
 		// 직원 이름, 연봉
 		Company com = new Company("자바");
 		
+		// 외부에서 중첩 클래스로 객체를 생성하려면, 바깥 클래스 객체를 먼저 생성해야 함.
+//		Company.Employee emp = com.new Employee("ABC", 5000);
+		
 		com.addEmployee("A", 4000);
 		com.addEmployee("B", 4000);
 		com.addEmployee("C", 5000);
@@ -20,6 +23,7 @@ public class CompanyExample {
 		
 		com.printEmployee();
 		System.out.println(com.salAvg());
+		com.highSal();
 		
 		
 		
