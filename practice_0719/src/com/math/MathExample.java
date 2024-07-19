@@ -35,8 +35,9 @@ public class MathExample {
 		System.out.println("최소값 : " + Math.min(h, i));
 		
 		System.out.println("0이상 ~ 1미만 랜덤 : " + Math.random());
-		System.out.println(Math.random());
+		System.out.println((int) (Math.random()*46 + 1));
 
+		
 		
 	}
 }
