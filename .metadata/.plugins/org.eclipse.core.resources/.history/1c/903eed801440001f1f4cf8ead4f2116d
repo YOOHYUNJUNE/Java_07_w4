@@ -1,7 +1,0 @@
-package com.oop.basic.ch09;
-
-public class AccountExample {
-	public static void main(String[] args) {
-		
-	}
-}

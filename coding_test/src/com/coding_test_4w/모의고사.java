@@ -16,8 +16,8 @@ public class 모의고사 {
 		Scanner sc = new Scanner(System.in);
 		// 배열 크기 선정
 		System.out.println("배열 크기를 정해주세요.");
-//		int n = sc.nextInt();
-		int n =1;
+		int n = sc.nextInt();
+//		int n=1;
 		
 		int[] sol = new int[n];
 		for (int i=0; i<n; i++) {
@@ -117,14 +117,21 @@ public class 모의고사 {
 		score[0] = oneSol;
 		score[1] = twoSol;
 		score[2] = threeSol;
-		
 		System.out.println(Arrays.toString(score));
-	
+		
 		// 최고점 학생 배열
 		int[] s1 = {1}; // 학생 수
 		int[] s2 = {1,2};
 		int[] s3 = {1,2,3};
 		
+//        // 배열을 순회하며 최대값과 최대값의 인덱스 찾기
+//        for (int i = 1; i < arr.length; i++) {
+//            if (arr[i] > maxValue) {
+//                maxValue = arr[i];
+//                maxIndex = i;
+//            }
+//        }
+
 		// 최종 값 정의
 		int[] answer;
 		

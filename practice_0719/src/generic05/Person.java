@@ -12,9 +12,9 @@ class Worker extends Person {}
 class Student extends Person {}
 
 
-class HighStudent extends Person {}
+class HighStudent extends Student {}
 
 
-class MiddleStudent extends Person {}
+class MiddleStudent extends Student {}
 
 

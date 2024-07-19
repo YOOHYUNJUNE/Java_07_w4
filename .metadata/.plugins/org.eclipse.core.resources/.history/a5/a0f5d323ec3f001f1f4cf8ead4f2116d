@@ -1,6 +1,0 @@
-package com.oop.basic.ch04;
-
-public class Tire {
-	String brand = "금호타이어";
-	
-}
