@@ -1,7 +1,0 @@
-package com.oop.basic.ch01;
-
-public class StudentExample {
-	public static void main(String[] args) {
-		
-	}
-}
