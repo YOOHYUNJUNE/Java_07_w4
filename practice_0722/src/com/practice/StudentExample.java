@@ -11,11 +11,15 @@ public class StudentExample {
 
 		system.listStudents();
 		
+		System.out.println();
+		
 		system.updateStudent("S1001", "김연아", Map.of("수학", 99.7, "과학", 95.3));
-//		system.listStudentGrade("S1001");
+		system.listStudentGrades("S1001");
+		
+		System.out.println();
 //		
-//		system.removeStudent("S1002");
-//		system.listStudent();
+		system.removeStudent("S1002");
+		system.listStudents();
 //		
 		
 		
