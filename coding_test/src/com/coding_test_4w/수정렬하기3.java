@@ -3,7 +3,7 @@ package com.coding_test_4w;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ascending {
+public class 수정렬하기3 {
 	public static void main(String[] args) {
 		
 		// 백준 10989 : 수 정렬하기 3

@@ -3,7 +3,7 @@ package com.coding_test_4w;
 //import java.util.Arrays;
 import java.util.Scanner;
 
-public class Remain {
+public class 나머지 {
 	public static void main(String[] args) {
 		
 		// int n 10개를 입력 받음

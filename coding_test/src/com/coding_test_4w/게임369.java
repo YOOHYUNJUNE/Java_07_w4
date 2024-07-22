@@ -2,7 +2,7 @@ package com.coding_test_4w;
 
 import java.util.Scanner;
 
-public class ThreeSixNine {
+public class 게임369 {
 	public static void main(String[] args) {
 		
 		// 3, 6, 9 개수만큼 박수 : contain?
