@@ -1,10 +1,15 @@
 package com.coding_test_4w;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
+
 
 public class 모의고사 {
-	public static void main(String[] args) {
+public static void main(String[] args) {
+		
+//// 프로그래머스식
+//class Solution {
+//    public int[] solution(int[] answers) {
+//        int[] answer = {};
 		
 		// 1번 학생 : 1 2 3 4 5 반복
 		// 2번 학생 : 2 1 2 3 2 4 2 5 반복
@@ -17,16 +22,17 @@ public class 모의고사 {
 		// 배열 크기 선정
 		System.out.println("배열 크기를 정해주세요.");
 		int n = sc.nextInt();
-//		int n=1;
+//		프로그래머스식
+//		int n = answer.length;
 		
 		int[] sol = new int[n];
 		for (int i=0; i<n; i++) {
 			
 			// 직접 입력
 			int number = sc.nextInt();
-			// 정답 1~5 랜덤 입력
-//			int number = (int) (Math.random()*5 + 1);
 			sol[i] = number;
+//			// 정답 1~5 랜덤 입력
+////			int number = (int) (Math.random()*5 + 1);
 		}
 		
 		System.out.println("정답 : " + Arrays.toString(sol));
@@ -117,32 +123,26 @@ public class 모의고사 {
 		score[0] = oneSol;
 		score[1] = twoSol;
 		score[2] = threeSol;
-		System.out.println(Arrays.toString(score));
 		
-		// 최고점 학생 배열
-		int[] s1 = {1}; // 학생 수
-		int[] s2 = {1,2};
-		int[] s3 = {1,2,3};
+		// 최고점
+		int maxScore = Math.max(oneSol, Math.max(twoSol, threeSol));
 		
-//        // 배열을 순회하며 최대값과 최대값의 인덱스 찾기
-//        for (int i = 1; i < arr.length; i++) {
-//            if (arr[i] > maxValue) {
-//                maxValue = arr[i];
-//                maxIndex = i;
-//            }
-//        }
+		// 최고점 학생
+		List<Integer> top = new ArrayList<>();
+		if (oneSol == maxScore) {
+			top.add(1);
+		}
+		if (twoSol == maxScore) {
+			top.add(2);
+		}
+		if (threeSol == maxScore) {
+			top.add(3);
+		}
 
-		// 최종 값 정의
-		int[] answer;
+		// 프로그래머스식
+//		return answer;
 		
-		
-		
-	
-		
-//		System.out.println(Arrays.toString(answer));
-		
-		// 오름차순 정렬
-//		Arrays.sort(null);
+		System.out.println(top);
 		
 		
 		
@@ -150,10 +150,8 @@ public class 모의고사 {
 		
 		
 		
+    }
 		
-		
-		
-		
-		
-	}
-}
+    }
+//}
+

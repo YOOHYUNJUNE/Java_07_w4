@@ -1,9 +1,0 @@
-package com.opp.inheritance2;
-
-public class Phone {
-	public String model, color; // 상속을 위해서 필수는 아님
-	
-	
-	
-	
-}

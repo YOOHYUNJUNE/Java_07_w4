@@ -1,6 +1,0 @@
-package a;
-
-// public 제거 : 타 패키지에서 호출 불가능
-class A {
-
-}

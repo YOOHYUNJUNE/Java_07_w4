@@ -1,5 +1,0 @@
-package com.oop.abstract2;
-
-public class Circle extends Shape {
-
-}

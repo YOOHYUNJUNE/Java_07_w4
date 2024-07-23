@@ -1,9 +1,0 @@
-package a;
-
-public class ClassName {
-	byte byteValue;
-	short shortValue;
-	int intValue;
-	
-	
-}

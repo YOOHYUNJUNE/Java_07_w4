@@ -1,5 +1,0 @@
-package com.oop.abstract3;
-
-public class Ltab extends Mobile {
-
-}
