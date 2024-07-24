@@ -3,13 +3,13 @@ package com.coding_test_4w;
 import java.util.*;
 
 
-public class 모의고사 {
-public static void main(String[] args) {
+
+//public static void main(String[] args) {
 		
-//// 프로그래머스식
-//class Solution {
-//    public int[] solution(int[] answers) {
-//        int[] answer = {};
+// 프로그래머스식
+class Solution {
+    public int[] solution(int[] answers) {
+        int[] answer = {};
 		
 		// 1번 학생 : 1 2 3 4 5 반복
 		// 2번 학생 : 2 1 2 3 2 4 2 5 반복
@@ -18,24 +18,24 @@ public static void main(String[] args) {
 		// 문제 배열 주어질때, 가장 많이 맞춘 사람(중복시 전부 표시)
 		// 문제 답은 1 ~ 5
 		
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
 		// 배열 크기 선정
-		System.out.println("배열 크기를 정해주세요.");
-		int n = sc.nextInt();
+//		System.out.println("배열 크기를 정해주세요.");
+//		int n = sc.nextInt();
 //		프로그래머스식
-//		int n = answer.length;
+		int n = answer.length;
 		
 		int[] sol = new int[n];
 		for (int i=0; i<n; i++) {
 			
 			// 직접 입력
-			int number = sc.nextInt();
-			sol[i] = number;
+//			int number = sc.nextInt();
 //			// 정답 1~5 랜덤 입력
 ////			int number = (int) (Math.random()*5 + 1);
+//			sol[i] = number;
 		}
 		
-		System.out.println("정답 : " + Arrays.toString(sol));
+//		System.out.println("정답 : " + Arrays.toString(sol));
 		
 		// 1번 학생
 		int[] one = {1, 2, 3, 4, 5};
@@ -140,9 +140,7 @@ public static void main(String[] args) {
 		}
 
 		// 프로그래머스식
-//		return answer;
-		
-		System.out.println(top);
+		return answer;
 		
 		
 		
@@ -150,8 +148,9 @@ public static void main(String[] args) {
 		
 		
 		
+		
+		
+    
+	
     }
-		
-    }
-//}
-
+}
