@@ -36,12 +36,31 @@ public class 소트인사이드 {
 			intArr[i] = Integer.parseInt(strArr[i]);
 		}
 		
+		Arrays.sort(intArr); // 내림차순 정렬은 안됨
 		System.out.println(Arrays.toString(intArr));
 		
+		// 오름차순 정렬한 배열을 내림차순으로
+		// 임시
+		int[] arrTemp = new int[intArr.length];
+
+		for (int i=0; i<intArr.length; i++) {
+			arrTemp[i] = intArr[intArr.length - 1 - i];
+		}
+//		System.out.println(Arrays.toString(arrTemp));
+
+		// 배열을 다시 숫자로 만들기
+		
+		// int -> String
+		String[] arr = new String[arrTemp.length];
+		
+		for (int i=0; i<arr.length; i++) {
+			arr[i] = String.valueOf(arrTemp[i]);
+			System.out.print(arr[i]);
+		}
+	
 		
 		
-		// 배열에 넣고, arr[i] < arr[i+1], arr[i] = arr[i+1]
-		
+	
 		
 		
 		
