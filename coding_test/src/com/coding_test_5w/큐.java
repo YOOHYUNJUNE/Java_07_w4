@@ -3,7 +3,7 @@ package com.coding_test_5w;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class 큐 {
@@ -22,7 +22,7 @@ public class 큐 {
 		// 이후 명령어
 		
 		// 큐로 사용할 배열
-		List<Integer> q = new ArrayList<>();
+		List<Integer> q = new LinkedList<>();
 		
 		BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
 		
