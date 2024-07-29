@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.collection.map.Book"/>
-    <fullyQualifiedTypeName name="com.collection.queue.Message"/>
     <fullyQualifiedTypeName name="com.lambda.MyInterface"/>
     <fullyQualifiedTypeName name="com.lambda2.Calculator"/>
     <fullyQualifiedTypeName name="com.lambda3.Speakable"/>
@@ -52,7 +50,6 @@
     <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="javax.imageio.stream.ImageInputStream"/>
     <fullyQualifiedTypeName name="javax.imageio.ImageReader"/>
     <fullyQualifiedTypeName name="javax.imageio.stream.FileImageInputStream"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 </qualifiedTypeNameHistroy>
