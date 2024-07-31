@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+import com.kosta.service.PostService;
+import com.kosta.service.PostServiceImpl;
 import com.kosta.service.UserServiceImpl;
 
 public class KostagramExample {
@@ -17,7 +19,7 @@ public class KostagramExample {
 	public static boolean isActive = true;
 	
 	private static UserServiceImpl us = new UserServiceImpl();
-
+	private static PostService ps = new PostServiceImpl();
 	
 
 	public static void main(String[] args) {
@@ -83,7 +85,7 @@ public class KostagramExample {
 		return num;
 	}
 
-	public static void switchMenu() {
+	public static void switchMenu() throws SQLException {
 		switch (mainMenu()) {
 			case 1:
 				switchUserMenu();
@@ -96,7 +98,7 @@ public class KostagramExample {
 		}
 	}
 
-	public static void switchUserMenu() {
+	public static void switchUserMenu() throws SQLException {
 		switch (userMenu()) {
 			case 1:
 				us.addUser();
@@ -116,10 +118,10 @@ public class KostagramExample {
 		}
 	}
 
-	public static void switchPostMenu() {
+	public static void switchPostMenu() throws SQLException {
 		switch (postMenu()) {
 			case 1:
-				System.out.println("전체 게시물");
+				ps.getPostList();
 				switchPostSubMenu();
 				break;
 			case 2:

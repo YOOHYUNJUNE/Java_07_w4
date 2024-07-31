@@ -1,10 +1,12 @@
 package com.kosta.service;
 
+import java.sql.SQLException;
+
 public interface PostService {
 
 	// postMenu
 	
-	void getPostList(); // [1] 전체 게시물
+	void getPostList() throws SQLException; // [1] 전체 게시물
 
 	void addPost(); // [2] 게시물 등록
 

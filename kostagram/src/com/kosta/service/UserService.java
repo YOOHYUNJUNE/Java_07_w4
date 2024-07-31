@@ -1,16 +1,20 @@
 package com.kosta.service;
 
+import java.sql.SQLException;
+
+import com.kosta.model.User;
+
 public interface UserService {
 	
 	
 	// userMenu
 	
 	
-//	void getUser();
+	User getUser(int id);
 	
 //	void getUserList();
 
-	void addUser(); // [1] 회원가입
+	void addUser() throws SQLException; // [1] 회원가입
 	
 //	void modifyUser();
 
