@@ -117,6 +117,70 @@ public class PostDAO {
 
 
 
+	public int addLike(int userId, int postId) throws Exception {
+		String sql = "insert into likes (post_id, user_id) values (?,?) "
+				+ "on duplicate key update deleted_at = null"; // 비교가 아니라 대입이므로 is가 아니라 = null
+		try (
+			Connection conn = DBConnection.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+		) {	
+			pstmt.setInt(1, postId);
+			pstmt.setInt(2, userId);
+			return pstmt.executeUpdate(); // public void -> int 변경
+		}
+		
+		
+	}
+
+
+	
+	public List<Post> getLikedPostListByUser(int userId) throws Exception {
+		String sql = "select p.* from posts p "
+				+ "join likes l on l.post_id = p.id "
+				+ "where l.user_id = ? and l.deleted_at is null and p.deleted_at is null";
+		
+		try (
+			Connection conn = DBConnection.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+		) {			
+			pstmt.setInt(1, userId);
+			ResultSet rs = pstmt.executeQuery();
+			
+			List<Post> postList = new ArrayList<>();
+			
+			while (rs.next()) {
+				Post post = new Post (
+					rs.getInt("id"), rs.getInt("user_id"),
+					rs.getString("content"), rs.getString("image"),
+					rs.getDate("created_at"), rs.getDate("updated_at"), rs.getDate("deleted_at")				
+				);				
+				postList.add(post);
+			}
+			return postList;
+		}
+		
+	}
+
+
+
+	public int deleteLike(int userId, int postId) throws Exception {
+		String sql = "update likes set deleted_at = now() where post_id =? and user_id=? and deleted_at is null";
+		try (
+			Connection conn = DBConnection.getConnection();
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+		) {	
+			pstmt.setInt(1, postId);
+			pstmt.setInt(2, userId);
+			return pstmt.executeUpdate(); // public void -> int 변경
+		}
+		
+		
+	}
+
+
+
+
+
 
 	
 	
