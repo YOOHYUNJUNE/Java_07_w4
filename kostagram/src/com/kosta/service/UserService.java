@@ -1,5 +1,9 @@
 package com.kosta.service;
 
+import java.lang.annotation.Target;
+import java.util.Iterator;
+import java.util.List;
+
 import com.kosta.controller.KostagramExample;
 import com.kosta.dao.UserDAO;
 import com.kosta.model.User;
@@ -11,7 +15,8 @@ public class UserService {
 	
 	
 
-	// 
+	// private ----------------------------------------
+	
 	private String getInput(String name, boolean isRequire) {
 		System.out.println(name + " 입력 : ");
 		String input = KostagramExample.sc.nextLine();
@@ -28,6 +33,18 @@ public class UserService {
 		
 		return input;
 	}
+	
+	
+	// 유저 정보 // dao의 getUser로 이동
+	private User getUser(int id) throws Exception {
+		User user = userDao.getUser(id);
+		return user;
+	}
+	
+	
+	
+	
+	// public -----------------------------------------------
 	
 	// 회원가입
 	public void signUpUser() throws Exception {
@@ -49,7 +66,7 @@ public class UserService {
 		
 		// 결과 출력
 		if (resultRow > 0) { // id를 1 이상으로 설정
-			System.out.println("\n\n 회원가입이 완료되었습니다 :)");			
+			System.out.println(name + "님 회원가입이 완료되었습니다 :)");			
 		} else {
 			System.out.println("\n 회원가입 실패");
 		}
@@ -57,7 +74,7 @@ public class UserService {
 	}
 
 	// 회원탈퇴
-	public void withdrawlUser() throws Exception {
+	public void withdrawalUser() throws Exception {
 		System.out.println("\n ---------- 회원탈퇴를 진행합니다. ----------");
 		int user_id = Integer.parseInt(getInput("사용자 ID", true));
 		
@@ -80,10 +97,96 @@ public class UserService {
 		
 	}
 
-	// 유저 정보 // dao의 getUser로 이동
-	private User getUser(int id) throws Exception {
-		User user = userDao.getUser(id);
-		return user;
+
+	// 유저 전체 조회
+	public void printAllUsers() throws Exception {
+		System.out.println("\n ---------- 회원 전체를 출력합니다. ----------");
+		List<User> userList = userDao.getUserList();
+		System.out.println("iD\t이름\t이메일");
+		System.out.println("----------------------");
+		
+		for (User user : userList) {
+			System.out.println(
+				user.getId() + "\t" + 
+				user.getName() + "\t" +
+				user.getEmail()
+			);
+		}
+		
+	}
+
+	
+	// 팔로우
+	public void followUser() throws Exception {
+		printAllUsers();
+		// 팔로우 하는 사람
+		System.out.println("자신의 ID를 입력하세요.");
+		int user_id = Integer.parseInt(getInput("ID", true)) ;
+		User user = getUser(user_id);
+		System.out.println("\n ----- " + user.getName() + "님이 팔로우합니다. -----");
+		
+		// 팔로우 받는 대상
+		System.out.println("누구를 팔로우 하시겠습니까?");
+		int target_id = Integer.parseInt(getInput("팔로우 할 대상의 ID", true));
+		User target = getUser(target_id);
+		
+		// 자기 자신은 못하게
+		if (user_id == target_id) {
+			System.out.println("자신은 팔로우 할 수 없습니다.");
+		} else {
+			// 팔로우 하는사람, 받는 사람
+			int resultRow = userDao.addFollower(user_id, target_id);			
+			if (resultRow > 0) {
+				System.out.println(user.getName() + "님이 " + target.getName() + "님을 팔로우 했습니다.");
+				// user의 모든 팔로우 리스트 출력
+				System.out.println(user.getName() + "님이 팔로우하고 있는 다른 유저 : " + target.getName() + "님");
+				printAllFollowers(user_id);
+				
+			}
+		}		
+	}
+
+	// 모든 팔로우 리스트 출력
+	public void printAllFollowers(int id) throws Exception {
+		List<User> userList = userDao.getFollowers(id);
+		System.out.println("iD\t이름\t이메일");
+		System.out.println("----------------------");
+
+		for (User user : userList) {
+			System.out.println(user.getId() + "\t" + user.getName()				
+			);
+		}
+	}
+
+
+	
+	// 언팔로우
+	public void unfollowUser() throws Exception {
+		printAllUsers();
+		// 언팔로우 하는 사람
+		System.out.println("자신의 ID를 입력하세요.");
+		int user_id = Integer.parseInt(getInput("ID", true)) ;
+		User user = getUser(user_id);
+		System.out.println("\n ----- " + user.getName() + "님이 언팔로우합니다. -----");
+		
+		// 언팔로우 받는 대상
+		System.out.println("누구를 언팔로우 하시겠습니까?");
+		int target_id = Integer.parseInt(getInput("언팔로우 할 대상의 ID", true));
+		User target = getUser(target_id);
+		
+		// user의 모든 팔로우 리스트 출력
+		System.out.println(user.getName() + "님이 팔로우하고 있는 다른 유저 : " + target.getName() + "님");
+		printAllFollowers(user_id);
+		
+		// 언팔로우 하는사람, 언팔되는 사람
+		int resultRow = userDao.deleteFollower(user_id, target_id);			
+		if (resultRow > 0) {
+			System.out.println(user.getName() + "님이 " + target.getName() + "님을 언팔로우 했습니다.");
+			
+				
+			
+		}
+		
 	}
 	
 	
