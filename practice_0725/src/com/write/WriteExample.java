@@ -30,7 +30,7 @@ public class WriteExample {
 			w.close();
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 		

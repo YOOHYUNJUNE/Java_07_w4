@@ -23,14 +23,14 @@ public class ClassName {
 	static String staticField = "정적";
 	static void staticMethod1() {
 		// 중요 : 오직 정적 멤버만 사용 가능
-		// 정적 메소드에서는 인스턴스 멤버 사용 불가능(instanceField XXX)
+		// 정적 메소드에서는 인스턴스 멤버 사용 불가능(instanceField )
 		// 굳이 사용시, 정적 필드 안에서 인스턴스 생성
 		ClassName cn = new ClassName();
 		cn.instanceField = "생성 후 인스턴스 필드 사용";
 		System.out.println(cn.instanceField);
 		cn.instanceMethod();
 	
-		// this. 사용 불가능(this.instanceField XXX)
+		// this. 사용 불가능(this.instanceField )
 		System.out.println(staticField);
 		staticMethod2();
 		

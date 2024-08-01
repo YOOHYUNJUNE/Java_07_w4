@@ -55,7 +55,7 @@ public class ArrayListExample3 {
 			thread0.join();
 			thread1.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		

@@ -52,7 +52,7 @@ public class VectorExample1 {
 			thread0.join();
 			thread1.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 		

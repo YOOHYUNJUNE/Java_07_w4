@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.lambda.MyInterface"/>
-    <fullyQualifiedTypeName name="com.lambda2.Calculator"/>
-    <fullyQualifiedTypeName name="com.lambda3.Speakable"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="lombok.ToString"/>
-    <fullyQualifiedTypeName name="com.lambda4.AgeComparator"/>
-    <fullyQualifiedTypeName name="com.lambda5.Calculable"/>
-    <fullyQualifiedTypeName name="com.lambda5.CalculateService"/>
-    <fullyQualifiedTypeName name="com.assignment.BookManager"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="com.lambda.Comparable"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
@@ -27,8 +16,6 @@
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="com.stream4.Beverage"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="com.practice.Post"/>
     <fullyQualifiedTypeName name="com.practice.PostSystem"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -41,7 +28,6 @@
     <fullyQualifiedTypeName name="java.io.Writer"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
@@ -60,4 +46,18 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.kosta.service.UserService"/>
+    <fullyQualifiedTypeName name="com.kosta.controller.KostagramExample"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.kosta.service.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="com.kosta.service.PostServiceImpl"/>
+    <fullyQualifiedTypeName name="com.kosta.service.PostService"/>
 </qualifiedTypeNameHistroy>
