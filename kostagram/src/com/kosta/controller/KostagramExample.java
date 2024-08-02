@@ -9,161 +9,110 @@ import com.kosta.util.DBConnection;
 
 public class KostagramExample {
 	
-	// 스캐너
+	// 입출력 받는 Scanner
 	public static Scanner sc = new Scanner(System.in);
-	
-	// 무한 루프 메소드
+
+	// 무한 루프 boolean 값
 	public static boolean isActive = true;
 	
-	// UserService 인스턴스
+	// UserService 인스턴스 생성
 	public static UserService us = new UserService();
-	
-	// PostService 인스턴스
+	// PostService 인스턴스 생성
 	public static PostService ps = new PostService();
 	
-	
-	
-	
 	public static void main(String[] args) {
-		
-		// 데이터베이스 연결 : util에서
-		try ( // 리소스 자동 닫기 : try()
-			Connection conn = DBConnection.getConnection();			
+		try (
+			// 데이터베이스 연결
+			Connection conn = DBConnection.getConnection()
 		) {
+			// 무한루프
 			while(isActive) {
-//				userMenu();
-//				postMenu();
 				System.out.println("[1] 회원 관리 | [2] 게시물 관리 | [3] 종료");
 				int num = sc.nextInt();
-				switch(num) {
-				case 1 : userMenu(); break;
-				case 2 : postMenu(); break;
-				default : 
-					System.out.println("종료합니다.");
-					isActive = false;
-				
+				sc.nextLine();
+				switch (num) {
+					case 1: 
+						userMenu();
+						break;
+					case 2:
+						postMenu();
+						break;
+					case 3:
+					default :
+						System.out.println("종료합니다.");
+						isActive = false;
 				}
-				}
-			} catch (Exception e) {			
+			}
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			if (sc != null) sc.close();			
-		}
-		
-		
-	} // main
+			if (sc != null) sc.close();
+		}	
+	}
 	
-	
-	// 게시글 메뉴
 	private static void postMenu() throws Exception {
-		System.out.println("\n--------------- POST MENU ---------------");
+		System.out.println("\n------- POST MENU -------");
 		System.out.println("[1] 작성 | [2] 수정 | [3] 삭제 | [4] 전체 목록 | [5] 좋아요 | [6] 좋아요 취소 | [7] 종료");
 		int num = sc.nextInt();
 		sc.nextLine();
-		
 		switch (num) {
-			case 1 : // 작성
-				// PostService > writePost()
-				// 사용자 아이디, 게시글 내용, 이미지 입력 / id로 유저 존재 확인
-				// PostDAO > addPost(Post post);
-				// DB에 추가
+			case 1:
 				ps.writePost();
 				break;
-				
-			case 2 : // 수정
-				// PostService > modifyPost()
-				// 전체 목록 출력 후 특정 게시물의 ID 확인
-				// 게시글 내용 또는 이미지 수정 / 둘중 하나 null 허용
-				// PostDAO > updatePost(Post post);
-				// DB에 반영
+			case 2:
 				ps.modifyPost();
 				break;
-				
-			case 3 : // 삭제						
-				// PostService > deletePost()
-				// 전체 목록 출력 후 특정 게시물의 ID 확인하고 삭제
-				// PostDAO의 deletePost(int id);
-				// DB에서 삭제 (deleted_at = now())
+			case 3:
 				ps.deletePost();
 				break;
-				
-			case 4 : // 전체 목록
-				// PostService > printAllPosts()
-				// 전체 목록 출력
-				// PostDAO > getPostList()
-				// 반환 타입 LIST<Post>
+			case 4:
 				ps.printAllPosts();
 				break;
-				
-			case 5 : // 좋아요
+			case 5:
 				ps.likePost();
 				break;
-			
-			case 6 : // 좋아요 취소
+			case 6:
 				ps.unlikePost();
 				break;
-			
-//			case 7 : // 종료
-//				System.err.println("종료합니다.");
-//				isActive = false;
-			default :
-				System.err.println("종료합니다.");
+			case 7:
+				// 종료
+			default:
+				System.out.println("종료합니다.");
 				isActive = false;
-			}
+		}
 	}
-	
-	
-	
-	// 유저 메뉴
 	private static void userMenu() throws Exception {
-		// 메뉴 출력(무한 루프 : isActive)
-					while (isActive) {
-						System.out.println("\n--------------- USER MENU ---------------");
-						System.out.println("[1] 가입 | [2] 탈퇴 | [3] 회원 목록 | [4] 팔로우 | [5] 언팔로우 | [6] 종료");
-						int num = sc.nextInt();
-						sc.nextLine();
-						
-						switch (num) {
-							case 1 : // 회원 가입
-								us.signUpUser();
-								break;
-								
-							case 2 : // 회원 탈퇴
-								us.withdrawalUser();
-								break;
-								
-							case 3 : // 회원 목록 조회
-								us.printAllUsers();
-								break;
-								
-							case 4 : // 팔로우
-								us.followUser();
-								break;
-								
-							case 5 : // 언팔로우
-								us.unfollowUser();
-								break;
-								
-//							case 6 : // 종료
-//								System.err.println("종료합니다.");
-//								isActive = false;
-							default :
-								System.err.println("종료합니다.");
-								isActive = false;
-								
-						}
-	
-	
-					}
-					
-	} // userMenu
-	
-	
-	
-	
-	
-	
+		// 메뉴 출력
+		System.out.println("\n------- USER MENU -------");
+		System.out.println("[1] 가입 | [2] 탈퇴 | [3] 전체 목록 | [4] 팔로우 | [5] 언팔로우 | [6] 종료");
+		int num = sc.nextInt();
+		sc.nextLine();
+		switch (num) {
+			case 1:
+				// 회원가입
+				us.signUpUser();
+				break;
+			case 2: 
+				// 회원탈퇴
+				us.withdrawalUser();
+				break;
+			case 3: 
+				// 회원 전체 목록
+				us.printAllUsers();
+				break;
+			case 4: 
+				// 팔로우
+				us.followUser();
+				break;
+			case 5: 
+				// 언팔로우
+				us.unfollowUser();
+				break;
+			case 6:
+				// 종료
+			default:
+				System.out.println("종료합니다.");
+				isActive = false;
+		}
+	}
 }
-	
-	
-
