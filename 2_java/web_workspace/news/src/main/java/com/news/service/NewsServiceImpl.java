@@ -18,8 +18,7 @@ public class NewsServiceImpl implements NewsService {
 		
 		String title = req.getParameter("title");
 		String content = req.getParameter("content");
-		System.out.println("제목과 내용 : " + title + ", " + content);
-		
+
 		// img 가져오기
 		Part part = req.getPart("img");
 		String header = part.getHeader("content-disposition");
@@ -59,5 +58,41 @@ public class NewsServiceImpl implements NewsService {
 		newsDAO.deleteNews(id);
 		
 	}
+
+	@Override
+	public void modifyNews(HttpServletRequest req) throws Exception {
+		// id값 가져오기 (수정)
+				int id = Integer.parseInt(req.getParameter("id"));
+				News news = newsDAO.getNews(id);
+				
+				String title = req.getParameter("title");
+				String content = req.getParameter("content");
+				
+				// 기사 수정
+				news.setTitle(title);
+				news.setContent(content);
+				
+				// img 가져오기
+				Part part = req.getPart("img");
+				String header = part.getHeader("content-disposition");
+				int start = header.indexOf("filename=");
+				String img = header.substring(start + 10, header.length()-1);
+				
+				// img 저장
+				if (img != null && !img.isEmpty()) {
+					part.write(img);
+					// 수정시
+					news.setImg(img);
+				}
+				
+				// DAO에게 DB에 넣으라 명령
+				newsDAO.modifyNews(news);
+		
+	}
+	
+	
+	
+	
+	
 
 }

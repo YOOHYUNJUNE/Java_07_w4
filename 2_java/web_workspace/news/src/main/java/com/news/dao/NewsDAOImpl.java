@@ -91,5 +91,23 @@ public class NewsDAOImpl implements NewsDAO {
 		}
 		
 	}
+
+	@Override
+	public void modifyNews(News news) throws Exception {
+		String sql = "update news set title=?, img=?, date=now(), content=? where id=?";
+		try (
+			Connection conn = DBPool.getDBPool();
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+					
+		) {
+			pstmt.setString(1, news.getTitle());
+			pstmt.setString(2, news.getImg());
+			pstmt.setString(3, news.getContent());
+			pstmt.setInt(4, news.getId());
+			pstmt.executeUpdate();
+		}
+		
+		
+	}
 	
 }

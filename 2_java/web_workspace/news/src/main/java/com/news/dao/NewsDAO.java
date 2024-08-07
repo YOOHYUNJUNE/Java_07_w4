@@ -23,5 +23,8 @@ public interface NewsDAO {
 	
 	// 뉴스 삭제
 	void deleteNews(int id) throws Exception;
+
+	// 뉴스 수정
+	void modifyNews(News news) throws Exception;
 	
 }

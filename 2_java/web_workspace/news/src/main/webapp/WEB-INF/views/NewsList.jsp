@@ -30,7 +30,7 @@
 					<c:forEach var="news" items="${newsList}" varStatus="s">
 						
 						<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-							<a href="/news/newsView?id=${news.getId()}">[${s.count}] 🎥 ${news.getTitle()}</a>
+							<a class="text-link" href="/news/newsView?id=${news.getId()}">[${s.count}] 🎥 ${news.getTitle()}</a>
 							<div>			
 								<span>${news.getDate()}</span>
 								<a href="/news/newsList?action=deleteNews&id=${news.getId()}">

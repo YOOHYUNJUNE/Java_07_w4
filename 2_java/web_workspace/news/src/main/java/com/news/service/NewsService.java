@@ -19,7 +19,10 @@ public interface NewsService {
 	
 	// 뉴스 삭제
 	void deleteNews(HttpServletRequest req) throws Exception;
-	
+
+	// 뉴스 수정
+	void modifyNews(HttpServletRequest req) throws Exception;
+
 	
 
 }
