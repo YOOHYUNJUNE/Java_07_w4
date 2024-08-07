@@ -15,6 +15,24 @@
 <title>뉴스 보기</title>
 </head>
 <body>
-	뉴스 보기
+
+	<div class="container mt-5 mx-auto">
+		<h2 class="text-center mb-4">${news.getTitle()}</h2>
+		<hr/>
+		<div class="card mx-auto">
+			<img src="/img/${news.getImg()}" alt="뉴스 이미지" />
+			<div class="card-body">
+				<h4 class="card-title">보도일자 : ${news.getDate()}</h4>
+				<p class="card-text">내용 : ${news.getContent()}</p>				
+			</div>		
+		</div>
+			<hr/>
+			<a href="javascript:history.back()" class="btn btn-primary">📌 뒤로가기 📌</a>
+	
+	
+	</div>
+
+	
+	
 </body>
 </html>

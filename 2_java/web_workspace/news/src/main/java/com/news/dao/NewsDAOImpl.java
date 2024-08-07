@@ -58,13 +58,37 @@ public class NewsDAOImpl implements NewsDAO {
 
 	@Override
 	public News getNews(int id) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "select * from news where id=?";
+		News news = null;
+		try (
+			Connection conn = DBPool.getDBPool();
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+		) {
+			pstmt.setInt(1, id);
+			ResultSet rs = pstmt.executeQuery();
+			if (rs.next()) {
+//				int id = rs.getInt("id"); // 안 가져와도 됨
+				String title = rs.getString("title");
+				String img = rs.getString("img");
+				String date = rs.getString("date");
+				String content = rs.getString("content");
+				news = new News(id, title, img, date, content);
+			}
+		}
+		return news;
 	}
 
 	@Override
 	public void deleteNews(int id) throws Exception {
-		// TODO Auto-generated method stub
+		String sql = "delete from news where id=?";
+		try (
+			Connection conn = DBPool.getDBPool();
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+				
+		) {
+			pstmt.setInt(1, id);
+			pstmt.executeUpdate();
+		}
 		
 	}
 	

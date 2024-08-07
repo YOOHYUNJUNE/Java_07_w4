@@ -47,14 +47,16 @@ public class NewsServiceImpl implements NewsService {
 	}
 
 	@Override
+	// 뉴스 클릭 메소드
 	public News getNews(HttpServletRequest req) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		int id = Integer.parseInt(req.getParameter("id"));
+		return newsDAO.getNews(id);
 	}
 
 	@Override
 	public void deleteNews(HttpServletRequest req) throws Exception {
-		// TODO Auto-generated method stub
+		int id = Integer.parseInt(req.getParameter("id"));
+		newsDAO.deleteNews(id);
 		
 	}
 

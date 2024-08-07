@@ -31,6 +31,12 @@ public class ListController implements NewsController {
 				
 			} else if (action != null && action.equals("deleteNews")) {
 				System.out.println("기사 삭제");
+				ns.deleteNews(req);
+				// 삭제 후 newsList 보여주기
+				res.sendRedirect(req.getRequestURI());
+				return;
+				
+				
 			} else {
 				// default (null인 경우)
 				System.out.println("기사 전체 보기");
@@ -40,6 +46,7 @@ public class ListController implements NewsController {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+			req.setAttribute("error", e.getMessage());
 		}
 		
 		String view = "/WEB-INF/views/NewsList.jsp";
