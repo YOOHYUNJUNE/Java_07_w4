@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* 네비바 */
+.navbar {
+	position: fixed; /* 상단 고정 */
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: #ffffff;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+
+/* 메뉴 이미지 */
+.coffee-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.coffee-item img:hover {
+    transform: scale(1.1);
+    transition: transform .1s;
+}
+
+
+/* 카드 스타일 */
+.coffee-item {
+	margin-bottom: 1.5rem;
+}
+
+
+/* 네비 아이콘 */
+.nav-circle {
+	border: 2px solid black;
+}
+
+.nav-circle:hover {
+	background-color: #ffc107;
+	border: 2px solid white;
+} 
+
+/* 성분 */
+.sugar {
+	font-size: 15px;
+	opacity: 0.7;
+}
+
+/* 상세설명 */
+.detail {
+	font-size: 11px;
+	opacity: 0.5;
+}
+
+
+/* 이미지 오버레이 설정 img-container over-img */
+.img-container {
+	position: relative;
+	display: inline-block;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 10; /* 위에 보이게 설정 */
+	right: 3px;
+	
+	width: 50px;
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ public class CoffeeServiceImpl implements CoffeeService {
 		int price = Integer.parseInt(req.getParameter("price")) ;
 		int caffeine = Integer.parseInt(req.getParameter("caffeine"));
 		int sugar = Integer.parseInt(req.getParameter("sugar"));
-		String detail = req.getParameter("name");
+		String detail = req.getParameter("detail");
 		
 		// img 가져오기
 		Part part = req.getPart("img");
@@ -43,28 +43,69 @@ public class CoffeeServiceImpl implements CoffeeService {
 		
 	}
 
+	
+	
 	@Override
 	public List<Coffee> getAll() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return coffeeDAO.getAll();
 	}
 
+	
+	
 	@Override
 	public Coffee getCoffee(HttpServletRequest req) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		int id = Integer.parseInt(req.getParameter("id"));
+		return coffeeDAO.getCoffee(id);
 	}
 
+	
+	
 	@Override
 	public void deleteCoffee(HttpServletRequest req) throws Exception {
-		// TODO Auto-generated method stub
-		
+		int id = Integer.parseInt(req.getParameter("id"));
+		coffeeDAO.deleteCoffee(id);
 	}
 
+	
+	
 	@Override
 	public void modifyCoffee(HttpServletRequest req) throws Exception {
-		// TODO Auto-generated method stub
+		// id값 가져오기
+		int id = Integer.parseInt(req.getParameter("id"));
+		Coffee coffee = coffeeDAO.getCoffee(id);
 		
+//		String img = req.getParameter("img");
+		String name = req.getParameter("name");
+		int price = Integer.parseInt(req.getParameter("price")) ;
+		int caffeine = Integer.parseInt(req.getParameter("caffeine"));
+		int sugar = Integer.parseInt(req.getParameter("sugar"));
+		String detail = req.getParameter("detail");
+		
+		
+		// 수정
+//		coffee.setImg(img);
+		coffee.setName(name);
+		coffee.setPrice(price);
+		coffee.setCaffeine(caffeine);
+		coffee.setSugar(sugar);
+		coffee.setDetail(detail);
+		
+		// img 가져오기
+		Part part = req.getPart("img");
+		String header = part.getHeader("content-disposition");
+		int start = header.indexOf("filename=");
+		String img = header.substring(start + 10, header.length()-1);
+		
+		// img 저장
+		if (img != null && !img.isEmpty()) {
+			part.write(img);
+			// 수정시
+			coffee.setImg(img);
+		}
+		
+		// DAO에게 DB에 넣으라 명령
+		coffeeDAO.modifyCoffee(coffee);
+				
 	}
 	
 

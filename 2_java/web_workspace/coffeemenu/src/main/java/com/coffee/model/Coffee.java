@@ -12,6 +12,23 @@ public class Coffee {
 	
 	// id 외 객체 생성
 	public Coffee(String name, String img, int price, int caffeine, int sugar, String detail) {
+		this.name = name;
+		this.img = img;
+		this.price = price;
+		this.caffeine = caffeine;
+		this.sugar = sugar;
+		this.detail = detail;
+	}
+
+	// DAOImpl > getAll에서 롬복 인식을 못해서?? 7개 매개변수 다 생성
+	public Coffee(int id, String name, String img, int price, int caffeine, int sugar, String detail) {
+		this.id = id;
+		this.name = name;
+		this.img = img;
+		this.price = price;
+		this.caffeine = caffeine;
+		this.sugar = sugar;
+		this.detail = detail;
 	}
 }
 
