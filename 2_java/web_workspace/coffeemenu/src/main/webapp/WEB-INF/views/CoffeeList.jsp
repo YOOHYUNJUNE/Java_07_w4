@@ -154,7 +154,7 @@
 					<input id="name" name="name" class="form-control" required />
 					<br/>
 					<label for="img" class="form-label">이미지</label>
-					<input id="img" name="img" class="form-control" type="file" required />
+					<input id="img" name="img" class="form-control" type="file" accept="image/*" required />
 					<br/>
 					<label for="price" class="form-label">가격</label>
 					<input id="price" name="price" class="form-control" type="number" required />

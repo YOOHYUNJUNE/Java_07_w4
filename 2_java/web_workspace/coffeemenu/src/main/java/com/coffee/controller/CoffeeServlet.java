@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/coffee/*")
-@MultipartConfig(maxFileSize = 1024*1024*2, location="C:\\Users\\WD")
+@MultipartConfig(maxFileSize = 1024*1024*2, location="C:\\Users\\WD\\coffeeimg")
 public class CoffeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -41,5 +41,7 @@ public class CoffeeServlet extends HttpServlet {
     	controller.process(req, res);
     	
 	}
+    
+
 
 }

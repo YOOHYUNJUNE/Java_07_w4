@@ -64,7 +64,7 @@
 					<input id="name" name="name" class="form-control" value="${coffee.getName()}" required />
 				
 					<label for="img" class="form-label">이미지</label>
-					<input id="img" name="img" class="form-control" type="file" />
+					<input id="img" name="img" class="form-control" type="file" accept="image/*" />
 					
 					<label for="price" class="form-label">가격</label>
 					<input id="price" name="price" class="form-control" type="number" value="${coffee.getPrice()}" required  />

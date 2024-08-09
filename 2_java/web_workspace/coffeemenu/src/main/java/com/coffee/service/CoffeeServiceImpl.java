@@ -1,5 +1,7 @@
 package com.coffee.service;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,7 +33,17 @@ public class CoffeeServiceImpl implements CoffeeService {
 		
 		// img 저장
 		if (img != null && !img.isEmpty()) {
+			// StringBuilder를 이용해서, 저장되는 이미지를 날짜,시간으로 바꾸기
+			StringBuilder pImg = new StringBuilder();
+			Calendar cal = Calendar.getInstance();
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmSS");
+			String time = dateFormat.format(cal.getTime());
+			pImg.append(time).append(img.substring(img.lastIndexOf(".")));
+			img = pImg.toString();
 			part.write(img);
+			
+		} else { // 사진 등록 안하는 경우
+			img = "default.jpg";
 		}
 		
 		// Coffee 객체 생성
