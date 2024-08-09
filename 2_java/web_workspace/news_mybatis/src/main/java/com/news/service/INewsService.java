@@ -59,7 +59,7 @@ public class INewsService implements NewsService {
 			part.write(originImg);
 		// 파일명이 없는 경우
 		} else { 
-			originImg = "default.jpg";
+			originImg = null;
 		}
 		return originImg;	
 	}
